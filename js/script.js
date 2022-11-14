@@ -17,5 +17,13 @@ while(i<expense.length){
          expenseList.innerHTML += item;
          i++ ;}
 
-         //creiamo ora l'ev
+
+//creiamo ora l'evento click che reagirà quando cliccheremo sul pulsante
+
+expenseBtn.addEventListener("click",
+function (){
+    let more = document.querySelector("#more").value;
+    expense.push(more);
+    expenseList.innerHTML += `<div>${more}</div>`;
+})
 
