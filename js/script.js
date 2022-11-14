@@ -13,7 +13,7 @@ let expenseList = document.querySelector(".list");
 //Andiamo ora a creare il ciclo while
 let i = 0;
 while(i<expense.length){
-        let item = `<div>${i+1}${expense[i]}</div>`;
+        let item = `<div> ${expense[i]}</div>`;
          expenseList.classList.add("list");
          expenseList.innerHTML += item;
          item
@@ -27,6 +27,6 @@ expenseBtn.addEventListener("click",
 function (){
     let more = document.querySelector("#more").value;
     expense.push(more);
-    expenseList.innerHTML += `<div>${expense[i]}</div>`;
+    expenseList.innerHTML += `<div> ${expense[i]}</div>`;
 })
 
