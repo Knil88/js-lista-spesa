@@ -27,6 +27,6 @@ expenseBtn.addEventListener("click",
 function (){
     let more = document.querySelector("#more").value;
     expense.push(more);
-    expenseList.innerHTML += `<div> ${expense[i]}</div>`;
+    expenseList.innerHTML += `<div> ${more}</div>`;
 })
 
