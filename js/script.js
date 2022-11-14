@@ -15,6 +15,8 @@ let i = 0;
 while(i<expense.length){
         let item = `<div> ${expense[i]}</div>`;
          expenseList.classList.add("list");
+         
+
          expenseList.innerHTML += item;
          item
          
